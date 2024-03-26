@@ -1,0 +1,19 @@
+{% for msg in get_flashed_messages() %}
+  <p>{{ msg }}</p>
+{% endfor %}
+    
+ 
+    <form action="/answer" method="post">
+        <h1>What is your favorite Season?</h1>
+        <input type="radio" name="season" >
+            <label for="Winter">Winter</label><br>
+        <input type="radio" name="season">
+            <label for="Spring">Spring</label><br>
+        <input type="radio" name="season" >
+            <label for="Summer">Summer</label><br>
+        <input type="radio" name="season" v>
+            <label for="Fall">Fall</label><br>
+    </form>
+    <button>Next</button>
+
+ 
